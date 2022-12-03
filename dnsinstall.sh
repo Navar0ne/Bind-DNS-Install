@@ -2,7 +2,9 @@
 
 installBind() {
 
-	if command -v bind; then
+	FILE = /etc/named.conf
+
+	if [ -e "$FILE" ]; then
 
 		echo -e "\nbind already installed\n"
 
